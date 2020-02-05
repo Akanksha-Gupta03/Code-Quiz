@@ -5,19 +5,31 @@ const questionContainerElement = document.getElementById("question-container")
 const questionElement = document.getElementById("question")
 const answerButtonElement = document.getElementById("answer-buttons")
 let score = 0;
+let timeEl = document.getElementById("timer")
+var secondsLeft = 60;
 
 
 
-function Timer(){
- let timeout = parseInt(document.getElementById('timer').innerText);
 
-    timeout -= 1;
+function setTime(){
+ var timerInterval = setInterval(function(){
+     secondsLeft--;
+     timeEl.textContent = secondsLeft;
 
-     document.getElementById('timer').innerText = timeout;
-    console.log(timeout);}
+     if(secondsLeft==0){
+         clearInterval(timerInterval);
+     }
+ },1000);
+};
+// let timeout = parseInt(document.getElementById('timer').innerText);
+
+   // timeout -= 1;
+
+     //document.getElementById('timer').innerText = timeout;
+   // console.log(timeout);}
 
 
- timeout = setInterval(Timer,1000);
+ //timeout = setInterval(Timer,1000);
  //clearInterval(timeout)
 
 
@@ -30,6 +42,7 @@ nextButton.addEventListener("click", () =>{
 })
 
 function startQuiz(){
+    setTime()
     startButton.classList.add("hide")
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0 
@@ -185,4 +198,3 @@ const questions = [
        ]
     }
 ]
-
