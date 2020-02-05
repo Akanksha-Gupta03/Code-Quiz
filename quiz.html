@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="quiz.css">
+    <script defer src="quiz.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>code Quiz</title>
+</head>
+<body>
+    <div style="position: fixed; top: 10px; right:0px; left: 0px; width:100%;">
+        <h4 style="float: left;">Score</h4>
+        <h4 style="float:right;"><span>Timer </span><span id="timer">60</span></h4>
+        <h2 style="text-align: center; text-decoration: underline;">Start the Quiz</h2>
+
+        
+    </div>
+    
+  <div class="container">
+ <div id="question-container" class="hide">
+        <div id="question">Question</div> 
+        <div id="answer-buttons">
+            <button class="btn" style ="display: block;">Answer 1</button><br>
+            <button class="btn" style="display: block;">Answer 2</button><br>
+            <button class="btn">Answer 3</button><br>
+            <button class="btn">Answer 4</button>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+ </div>
+
+    
+</body>
+</html>
+
