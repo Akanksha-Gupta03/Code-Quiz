@@ -1,6 +1,11 @@
 # Code-Quiz
 
-* Created a code quiz game
+* Created a code quiz game.
+
 * when click on the start button you will presented with a question and the timer will start.
-* when you answer the question and click on next button,the you will presented with the another question.
-* when you will reach the last question then you will presented with the restast button ,as you click on button then the quiz will restart from the beginning.
+
+* when you answered the question,then you will presented with the next question.If your answer is correct, your       score will increase but if your answer is wrong your score will be deducted by 5 seconds.
+
+* when you will answered the last question the quiz will be completed and your total score will display.
+
+* Created the input to enter initials of your name to see your score board. 
