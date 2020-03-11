@@ -9,3 +9,5 @@
 * when you will answered the last question the quiz will be completed and your total score will display.
 
 * Created the input to enter initials of your name to see your score board. 
+
+![Giphy ](asset/demo.gif)
